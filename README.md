@@ -31,3 +31,18 @@ module.exports = {
   // }
 };
 ```
+
+Bcrypt password in seed file
+
+```terminal
+$ npm install --save bcryptjs
+
+```
+
+```js
+var bcrypt = require('bcryptjs');
+
+password: bcrypt.hashSync('password54321', 8)
+
+
+```
