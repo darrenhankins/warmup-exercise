@@ -40,9 +40,9 @@ module.exports = {
 Bcrypt password in seed file
 
 ```js
-var bcrypt = require('bcryptjs');
+var bcrypt = require('bcrypt');
 
-password: bcrypt.hash('password54321', 8)
+password: bcrypt.hashSync('password', 10)
 
 
 ```
