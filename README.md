@@ -1,4 +1,5 @@
 # warmup-exercise
+`Galvanize/Exercises/warmup-exercise`
 
 Create database, migrations and seed with knex
 
@@ -8,6 +9,7 @@ $ mkdir dir-name
 $ npm init -y
 $ yarn add knex pg
 $ knex init
+$ yarn add bcrypt
 $ knex migrate:make migration-name
 $ knex seed:make 01-seed-name
 
@@ -34,15 +36,10 @@ module.exports = {
 
 Bcrypt password in seed file
 
-```terminal
-$ npm install --save bcryptjs
-
-```
-
 ```js
 var bcrypt = require('bcryptjs');
 
-password: bcrypt.hashSync('password54321', 8)
+password: bcrypt.hash('password54321', 8)
 
 
 ```

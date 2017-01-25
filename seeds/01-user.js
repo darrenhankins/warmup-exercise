@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
             }, {
                 id: 2,
                 email: 'ralph@crabshack.com',
-                password: bcrypt.hashSync('password12345', 8)
+                password: bcrypt.hash('password12345', 8)
             }]
             return knex('user').insert(users);
         });
