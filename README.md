@@ -1,5 +1,8 @@
 # warmup-exercise
+
 `Galvanize/Exercises/warmup-exercise`
+
+https://www.youtube.com/watch?v=h8jWVug3imU&feature=youtu.be
 
 Create database, migrations and seed with knex
 
